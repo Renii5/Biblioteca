@@ -1,0 +1,90 @@
+/* styles.css */
+
+
+/* from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    # Ejemplo de lista de libros
+    libros = ["Libro 1", "Libro 2", "Libro 3", "Libro 4"]
+    return render_template('home.html', libros=libros)
+
+if __name__ == '__main__':
+    app.run(debug=True) */
+
+body {
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+    
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding:20px 35px;
+}
+
+.list{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+
+.navbar {
+    background-color: #3b6a9b; /* Cambiar el color de fondo de la barra de navegación */
+}
+
+.navbar-brand, .nav-link {
+    color: hsl(0, 0%, 0%) !important; /* Cambiar el color del texto en la barra de navegación */
+}
+
+.btn-primary {
+    background-color: #3f28a7; /* Cambiar el color de fondo de los botones primarios */
+    border-color: #2839a7; /* Cambiar el color del borde de los botones primarios */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Cambiar el color de fondo de los botones de peligro */
+    border-color: #dc3545; /* Cambiar el color del borde de los botones de peligro */
+}
+
+.btn-success {
+    background-color: #17a2b8; /* Cambiar el color de fondo de los botones de éxito */
+    border-color: #17a2b8; /* Cambiar el color del borde de los botones de éxito */
+}
+
+.alert-danger {
+    background-color: #f8d7da; /* Cambiar el color de fondo de las alertas de peligro */
+    color: #721c24; /* Cambiar el color del texto de las alertas de peligro */
+    border-color: #f5c6cb; /* Cambiar el color del borde de las alertas de peligro */
+}

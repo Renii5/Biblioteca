@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="wrapper mt-4">
+  <h1>Lista de Libros</h1>
+  <ul class="list-group mt-4">
+    {% for libro in libros %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong>{{ libro[1] }}</strong> (ISBN: {{ libro[0] }}) - {{ libro[5] }} - {{ libro[4] }}
+      </div>
+      <a href="/modificar?isbn={{ libro[0] }}" class="btn btn-primary btn-sm">Modificar</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
